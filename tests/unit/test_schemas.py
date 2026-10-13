@@ -1,4 +1,4 @@
-"""Tier 1: isolated validation, without a server or database."""
+﻿"""Tier 1: isolated validation, without a server or database."""
 
 import pytest
 from pydantic import ValidationError
@@ -51,3 +51,5 @@ def test_required_fields_cannot_be_omitted(car_payload, field):
 def test_unknown_fields_are_rejected(car_payload):
     with pytest.raises(ValidationError):
         CarInput(**car_payload, price=10000)
+
+
