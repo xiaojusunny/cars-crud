@@ -252,3 +252,5 @@ The following documentation covers the library mechanisms used in the code:
 - SQLite connections and SQL parameters: https://docs.python.org/3/library/sqlite3.html
 - Pydantic fields and validation: https://docs.pydantic.dev/latest/concepts/fields/
 - Playwright Python library: https://playwright.dev/python/docs/library
+
+> Practice note: updated during Git exercise (step 3).
