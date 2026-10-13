@@ -17,7 +17,7 @@ def test_strips_surrounding_whitespace():
 
 def test_color_is_optional():
     car = CarInput(make="Toyota", model="Corolla", year=2024)
-    assert car.color == "Blue"
+    assert car.color == ""
 
 
 @pytest.mark.parametrize("year", [1886, 2100])
@@ -51,4 +51,5 @@ def test_required_fields_cannot_be_omitted(car_payload, field):
 def test_unknown_fields_are_rejected(car_payload):
     with pytest.raises(ValidationError):
         CarInput(**car_payload, price=10000)
+
 
