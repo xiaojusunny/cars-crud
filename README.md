@@ -1,4 +1,4 @@
-# Cars CRUD
+# Cars CRUD (main-branch change)
 
 A small training application: FastAPI, SQLite, plain HTML, CSS, and vanilla
 JavaScript. Create, list, view, edit, and delete cars. No login, ORM, template
