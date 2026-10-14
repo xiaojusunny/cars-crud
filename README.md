@@ -1,4 +1,4 @@
-# Cars CRUD (conflict resolved: merged both changes)
+# Cars CRUD
 
 A small training application: FastAPI, SQLite, plain HTML, CSS, and vanilla
 JavaScript. Create, list, view, edit, and delete cars. No login, ORM, template
@@ -12,19 +12,6 @@ calls the JSON API. This is not server-side templating.
 Use Python 3.11 or newer. Run the commands from the extracted `cars-crud` folder.
 
 ### macOS / Linux
-
-Check the interpreter before creating the virtual environment:
-
-```bash
-python3 --version
-```
-
-It must report Python 3.11 or newer. On macOS, `python3` may select Apple's
-Python 3.9 even when a newer Python is installed. In that case, use the newer
-interpreter explicitly, for example `python3.12 -m venv .venv`. An existing
-virtual environment keeps the Python version it was created with; to rebuild
-an incompatible one, use `python3.12 -m venv --clear .venv` and reinstall the
-dependencies below.
 
 ```bash
 cd cars-crud
@@ -148,6 +135,9 @@ curl http://127.0.0.1:8000/api/cars
 
 ## Run the tests
 
+For a guided hands-on learning lab with copy-paste, intentional-failure,
+and write-your-own tests, see [TESTING_WORKSHOP.md](TESTING_WORKSHOP.md).
+
 Use the virtual environment created above. On Windows, replace `python` below
 with `.\.venv\Scripts\python.exe` when the environment is not activated.
 
@@ -252,5 +242,3 @@ The following documentation covers the library mechanisms used in the code:
 - SQLite connections and SQL parameters: https://docs.python.org/3/library/sqlite3.html
 - Pydantic fields and validation: https://docs.pydantic.dev/latest/concepts/fields/
 - Playwright Python library: https://playwright.dev/python/docs/library
-
-> Practice note: updated during Git exercise (step 3).
